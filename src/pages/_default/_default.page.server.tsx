@@ -22,7 +22,9 @@ function render(pageContext: PageContext) {
   // See https://vite-plugin-ssr.com/html-head
   const { documentProps } = pageContext;
   const title = (documentProps && documentProps.title) || "Vite SSR app";
-  const desc = (documentProps && documentProps.description) || "App using Vite + vite-plugin-ssr";
+  const desc =
+    (documentProps && documentProps.description) ||
+    "App using Vite + vite-plugin-ssr";
 
   return html`<!DOCTYPE html>
     <html lang="en">

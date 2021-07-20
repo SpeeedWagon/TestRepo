@@ -12,7 +12,7 @@ function PageLayout({ children }: { children: Children }) {
       <Layout>
         <Sidebar>
           <Logo />
-          <a className="navitem" href="/">
+          <a className="bg-red-700" href="/">
             Home
           </a>
           <a className="navitem" href="/about">
