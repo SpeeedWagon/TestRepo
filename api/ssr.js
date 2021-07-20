@@ -1,4 +1,4 @@
-require("../dist/server/importer.js");
+require("../dist/server/importBuild");
 const { createPageRender } = require("vite-plugin-ssr");
 
 const renderPage = createPageRender({ isProduction: true });
