@@ -1,6 +1,6 @@
 import { createPageRender } from "vite-plugin-ssr";
 // We load `importBuild.js` so that the worker code can be bundled into a single file
-import "../dist/server/importBuild.js";
+require("../dist/server/importBuild.js");
 
 const renderPage = createPageRender({ isProduction: true });
 
