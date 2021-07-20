@@ -1,10 +1,10 @@
-import { createPageRender } from "vite-plugin-ssr";
+const { createPageRender } = require("vite-plugin-ssr");
 // We load `importBuild.js` so that the worker code can be bundled into a single file
 require("../dist/server/importBuild.js");
 
 const renderPage = createPageRender({ isProduction: true });
 
-export default async (req, res) => {
+module.exports = async (req, res) => {
   const { url } = req;
   const pageContext = { url };
   const result = await renderPage(pageContext);
